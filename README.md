@@ -7,7 +7,7 @@ The official ROS package of Guidance SDK for 32/64 bit Ubuntu and XU3.
 # How to use
 1. Start MS Windows.
 2. Install DJI Guidance SDK and set 'mode' and 'channel's.
-	- Refer the 'Possible errors' below.
+	- Refer the 'error 1' of 'Possible errors' below.
 3. Start Ubuntu.
 4. Open a terminal.
 5. Setup USB devide rules so that no root privilege is required when using Guidance SDK via USB.
@@ -28,15 +28,15 @@ The official ROS package of Guidance SDK for 32/64 bit Ubuntu and XU3.
 # Possible errors
 1. "Error: e_disparity_not_allowed at 291,/home/kevin/catkin_ws/src/Guidance-SDK-ROS/src/GuidanceNode.cpp"
 Based on the git issue replies such as https://github.com/dji-sdk/Guidance-SDK-ROS/issues/7?ts=2#issuecomment-241129568 and https://github.com/dji-sdk/Guidance-SDK-ROS/issues/23?ts=2#issuecomment-233074438 it seems that we need to used Window version's Guidance software to change the mode from 'startard' to 'DIY'.
-- Start MS Windows
-- Go to https://www.dji.com/kr/guidance/info
-- Download DJI Guidance for windows from 'Download' section, such as  https://dl.djicdn.com/downloads/dev/Guidance/DJI_Guidance_Installer_v1.3.zip
-- Unzip and install DJI Guidance by clicking the executable such as "DJI_Guidance_1.3_Installer_YYYYMMDD_X.exe"
-- Start DJI Guidance assistant
-	* Possible error
-		* "오디날(ordinal) 4684을(를) DLL C:\Program Files(x86)\Intel\Intel(R) Management Engine Components\iCLS\ssleay32.dll에서 찾을 수 없습니다"
-			* This error message can be ignored. 
-- Set the mode as 'DIY' and subscribe the channels while considering the bandwidth limit such as in https://developer.dji.com/guidance-sdk/documentation/application-development-guides/index.html
+	- Start MS Windows
+	- Go to https://www.dji.com/kr/guidance/info
+	- Download DJI Guidance for windows from 'Download' section, such as  https://dl.djicdn.com/downloads/dev/Guidance/DJI_Guidance_Installer_v1.3.zip
+	- Unzip and install DJI Guidance by clicking the executable such as "DJI_Guidance_1.3_Installer_YYYYMMDD_X.exe"
+	- Start DJI Guidance assistant
+		* Possible error
+			* "오디날(ordinal) 4684을(를) DLL C:\Program Files(x86)\Intel\Intel(R) Management Engine Components\iCLS\ssleay32.dll에서 찾을 수 없습니다"
+				* This error message can be ignored. 
+	- Set the mode as 'DIY' and subscribe the channels while considering the bandwidth limit such as in https://developer.dji.com/guidance-sdk/documentation/application-development-guides/index.html
 
 # Documentation
 To reduce the size of this package, we omit all documents. 
