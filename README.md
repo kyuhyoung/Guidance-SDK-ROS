@@ -5,14 +5,20 @@ The official ROS package of Guidance SDK for 32/64 bit Ubuntu and XU3.
 - We suppose the users are using USB for Guidance SDK on ROS. To use UART for Guidance SDK, plese reference [uart_example](https://github.com/dji-sdk/GuidanceSDK/tree/master/examples/uart_example).
 
 # How to use
-1. Setup USB devide rules so that no root privilege is required when using Guidance SDK via USB.
+1. Start MS Windows.
+2. Install DJI Guidance SDK and set 'mode' and 'channel's.
+- Refer the 'Possible errors' below.
+3. Start Ubuntu.
+4. Open a terminal.
+5. Setup USB devide rules so that no root privilege is required when using Guidance SDK via USB.
 		
 		sudo sh -c 'echo "SUBSYSTEM==\"usb\", ATTR{idVendor}==\"fff0\", ATTR{idProduct}==\"d009\", MODE=\"0666\"" > /etc/udev/rules.d/51-guidance.rules'
-2. Run `roscore` 	
+6. Run `roscore` 	
 
 		roscore
 
-3. Open a new terminal and clone the repo to the catkin workspace source directory `catkin_ws/src` and then 
+7. Open a new terminal.
+8. Clone the repo to the catkin workspace source directory `catkin_ws/src` and then 
 	
 		cd ~/catkin_ws
 		catkin_make
@@ -30,7 +36,7 @@ Based on the git issue replies such as https://github.com/dji-sdk/Guidance-SDK-R
 	* Possible error
 		* "오디날(ordinal) 4684을(를) DLL C:\Program Files(x86)\Intel\Intel(R) Management Engine Components\iCLS\ssleay32.dll에서 찾을 수 없습니다"
 			* This error message can be ignored. 
-- Set the mode as 'DIY' and subscribe the channels such as in https://developer.dji.com/guidance-sdk/documentation/application-development-guides/index.html
+- Set the mode as 'DIY' and subscribe the channels while considering the bandwidth limit such as in https://developer.dji.com/guidance-sdk/documentation/application-development-guides/index.html
 
 # Documentation
 To reduce the size of this package, we omit all documents. 
