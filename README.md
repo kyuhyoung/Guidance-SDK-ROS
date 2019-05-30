@@ -7,7 +7,7 @@ The official ROS package of Guidance SDK for 32/64 bit Ubuntu and XU3.
 # How to use
 1. Start MS Windows.
 2. Install DJI Guidance SDK and set 'mode' and 'channel's.
-- Refer the 'Possible errors' below.
+	- Refer the 'Possible errors' below.
 3. Start Ubuntu.
 4. Open a terminal.
 5. Setup USB devide rules so that no root privilege is required when using Guidance SDK via USB.
