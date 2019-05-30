@@ -29,8 +29,8 @@ Based on the git issue replies such as https://github.com/dji-sdk/Guidance-SDK-R
 - Start DJI Guidance assistant
 	* Possible error
 		* "오디날(ordinal) 4684을(를) DLL C:\Program Files(x86)\Intel\Intel(R) Management Engine Components\iCLS\ssleay32.dll에서 찾을 수 없습니다"
-			* 
-- Set the mode as 'DIY' such as in https://developer.dji.com/guidance-sdk/documentation/application-development-guides/index.html
+			* This error message can be ignored. 
+- Set the mode as 'DIY' and subscribe the channels such as in https://developer.dji.com/guidance-sdk/documentation/application-development-guides/index.html
 
 # Documentation
 To reduce the size of this package, we omit all documents. 
